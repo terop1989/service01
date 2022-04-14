@@ -1,4 +1,4 @@
-@Library('nomad-lib@master') _
+@Library('nomad-lib@nomad-deploy') _
 
 lib01 {
   projectName="service01"
