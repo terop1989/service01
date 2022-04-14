@@ -2,8 +2,6 @@ import time
 import random
 
 from flask import Flask
-from prometheus_flask_exporter import PrometheusMetrics
-
 
 app = Flask(__name__)
 PrometheusMetrics(app)
