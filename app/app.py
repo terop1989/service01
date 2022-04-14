@@ -4,7 +4,6 @@ import random
 from flask import Flask
 
 app = Flask(__name__)
-PrometheusMetrics(app)
 error_codes = ('404', '502')
 
 @app.route('/one')
