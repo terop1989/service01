@@ -1,5 +1,5 @@
 @Library('k8s-lib@resources_folder') _
 
-lib01 {
+k8slib {
   projectName="service01"
 }
