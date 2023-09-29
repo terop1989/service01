@@ -1,6 +1,5 @@
-@Library('nomad-lib@master') _
+@Library('nomad-lib@resources_folder') _
 
 lib01 {
   projectName="service01"
-  ext_lib_name="nomad-lib"
 }
