@@ -5,6 +5,7 @@ from flask import Flask
 
 app = Flask(__name__)
 error_codes = ('404', '502')
+status_codes = [200, 404]
 
 @app.route('/one')
 def route_one():
@@ -25,6 +26,12 @@ def route_three():
 def route_four():
     time.sleep(random.random() * 0.2)
     return 'Error...\n', random.choice(error_codes)
+
+@app.route('/health')
+def health():
+  status = random.choice(status_codes)
+  logger.info({"message" : "calling root route"})
+  return ('Status ' + str(status) + '\n', status)
 
 
 
